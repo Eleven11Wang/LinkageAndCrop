@@ -5,7 +5,7 @@ package MyPackage; /**
 
 import MyPackage.help.Image_Render;
 import MyPackage.help.Link_And_Crop;
-import MyPackage.help.myGUI;
+import MyPackage.help.myGUI2;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.plugin.PlugIn;
@@ -15,20 +15,15 @@ import java.io.IOException;
 import java.util.HashMap;
 
 
-public class My_First_Plugin implements PlugIn {
+public class Stuck_Remove implements PlugIn {
         private String path;
-        public My_First_Plugin(){}
-        public My_First_Plugin(String we){
+        public Stuck_Remove(){}
+        public Stuck_Remove(String we){
             this.path = we;
         }
     public void run(String arg) {
-//        OpenDialog wo = new OpenDialog("abc",null);
-//        String we = wo.getDirectory()+ wo.getFileName();
-//        IJ.showMessage(" New localization tabel path",we);
-        JFrame jf = new myGUI();
+        JFrame jf = new myGUI2();
         jf.setVisible(true);
-
-
 
     }
 
@@ -50,7 +45,7 @@ public class My_First_Plugin implements PlugIn {
 
     public static void main(String[] args) {
 
-        My_First_Plugin ix = new My_First_Plugin();
+        Stuck_Remove ix = new Stuck_Remove();
         ix.run("abc");
     }
 
